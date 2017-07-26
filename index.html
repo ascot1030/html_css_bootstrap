@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<title>Branded Surveys</title>
+	</head>
+	<body class="home">
+	<div id="wrapper">
+		<!-- Navigation -->
+		<nav class="navbar navbar-default  side-nav" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header clearfix">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.png" alt="LOGO">
+				</a>
+				
+			</div>
+			
+			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi, Erick Bautista <b class="fa fa-angle-down"></b> <img src="images/notification_bell.png" class="pull-right" alt=""></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+							<li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+							<li class="divider"></li>
+							<li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"> My Dashboard </a>
+					</li>
+					<li>
+						<a href="#">  My Points <span class="badge badge-info pull-right">900</span></a>
+					</li>
+					<li>
+						<a href="#"> Local Deals</a>
+					</li>
+					<li>
+						<a href="#">Offers</a>
+					</li>
+					<li>
+						<a href="#">Branded Elite</a>
+					</li>
+					<li class="active">
+						<a href="#">Invite Friends</a>
+					</li>
+					<li>
+						<a href="#"> Support</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<!-- Page Heading -->
+				<div class="row page_heading">
+					<div class="col-lg-2 col-sm-12 col-xs-12 text-center">
+						<h3>Points Overview</h3>
+					</div>
+					<div class="col-lg-8 col-sm-12 col-xs-12 text-center">
+						<div class="row">
+							<div class="col-md-4 col-sm-12 col-xs-12 text-left survey_points">
+								<strong class="text-uppercase">Approved Points</strong>
+								<h4 class="text-primary_light">900 Points</h4>
+							</div>
+							<div class="col-md-3 col-md-offset-1 col-sm-12 col-xs-12 text-left survey_points">
+								<strong class="text-uppercase">Pending Points</strong>
+								<h4 class="text-primary">200 Points</h4>
+							</div>
+							<div class="col-md-3 col-md-offset-1 col-sm-12 col-xs-12 text-left survey_points">
+								<strong class="text-uppercase">Points Until Payout</strong>
+								<h4 class="text-primary_dark">100 Points</h4>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75.1%;">
+								<span class="sr-only">Approved Points</span>
+							</div>
+							<span class="progress-type"  role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 16.6%;">
+								<strong class="sr-only">Pending Points</strong>
+							</span>
+							<span class="progress-completed"  role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 8.3%;">
+								<strong class="sr-only">Points Until Payout</strong>
+							</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-12 col-xs-12 text-center">
+						<a href="#" class="btn btn-primary">take a survey</a>
+					</div>
+				</div>
+				<!-- /.Page Heading -->
+				<!-- row -->
+				<div class="row" id="main" >
+					<div class="main_container clearfix panel">
+						<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+							<ul class="nav nav-tabs">
+							  <li class="active"><a href="#tab1" data-toggle="tab">Preferences</a></li>
+							  <li class=""><a href="#tab2" data-toggle="tab">Delete  Account</a></li>                         
+							</ul>
+						</div>
+						<!-- tab content -->
+						<div class="tab-content col-lg-10 col-md-9 col-sm-12 col-xs-12">
+							<div class="tab-pane active text-style" id="tab1">
+								<h1>Preferences</h1>
+								<p>Update your personal preferences below.<br/>Always make sure they're up to date, and save any changes before leaving. this page.</p>
+								<div class='clearfix'>
+									<div class="panel-group" id="accordion">
+									  <div class="panel panel-default">
+										<div class="panel-heading">
+										  <div class="panel-title clearfix">
+											<div class="col-md-3 control-label" for="name">Display Name</div>
+											<div class="col-md-9">
+												Ebautista
+												<a data-toggle="collapse" data-parent="#accordion" href="#name_edit" class="form-links pull-right">
+												  Edit
+												</a>
+											</div>
+										  </div>
+										</div>
+										<div id="name_edit" class="panel-collapse collapse in">
+										  <div class="panel-body">
+											<form action="" method="post">					
+												<!-- Name input-->
+												<div class="col-md-3 col-sm-4 col-xs-12 control-label" for="name">Name</div>
+												<div class="col-md-4 col-sm-8 col-xs-12">
+													<div class="form-group">
+														<label class="control-label" for="name">First Name</label>
+														<input id="name" name="fname" type="text" placeholder="Your name" class="form-control">
+														<p class="small">This is never shared publicly</p>
+													</div>
+													<div class="form-group">
+														<label class="control-label" for="name">Last Name</label>
+														<input id="name" name="lname" type="text" placeholder="Your name" class="form-control">
+													</div>
+													<div class="form-group">
+														<button type="submit" class="btn btn-primary">save changes</button>
+														<a href="#" class="text-uppercase form-links">cancel</a>
+													</div>
+												</div>
+										
+												<!-- Form actions -->
+												
+											  </form>
+										  </div>
+										</div>
+									  </div>
+									  <div class="panel panel-default">
+										<div class="panel-heading">
+										  <div class="panel-title clearfix">
+											<div class="col-md-3 control-label" for="name">Phone</div>
+											<div class="col-md-9">
+												(619) 626-0619
+												<a data-toggle="collapse" data-parent="#accordion" href="#phone_edit" class="form-links pull-right">
+												  Edit
+												</a>
+											</div>
+										  </div>
+										</div>
+										<div id="phone_edit" class="panel-collapse collapse">
+										  <div class="panel-body">
+												<form action="" method="post">					
+												<!-- Name input-->
+												<div class="col-md-3 col-sm-4 col-xs-12 control-label" for="name">Phone</div>
+												<div class="col-md-4 col-sm-8 col-xs-12">
+													<div class="form-group">
+														<label class="control-label" for="name">Phone</label>
+														<input id="phone" name="fname" type="tel" placeholder="Your phone number" class="form-control">
+														<p class="small">This is never shared publicly</p>
+													</div>
+													<div class="form-group">
+														<button type="submit" class="btn btn-primary">save changes</button>
+														<a href="#" class="text-uppercase form-links">cancel</a>
+													</div>
+												</div>
+										
+												<!-- Form actions -->
+												
+											  </form>
+										  </div>
+										</div>
+									  </div>
+									  <div class="panel panel-default">
+										<div class="panel-heading">
+											<div class="panel-title clearfix">
+												<div class="col-md-3 control-label" for="name">Address</div>
+												<div class="col-md-9">
+													1600 Pacific Highway, San Diego, CA 92101
+													<a data-toggle="collapse" data-parent="#accordion" href="#add_edit" class="form-links pull-right">
+													  Edit
+													</a>
+												</div>
+											</div>
+										</div>
+										<div id="add_edit" class="panel-collapse collapse">
+										  <div class="panel-body">
+											<form action="" method="post">					
+												<!-- Name input-->
+												<div class="col-md-3 col-sm-4 col-xs-12 control-label" for="name">Name</div>
+												<div class="col-md-4 col-sm-8 col-xs-12">
+													<div class="form-group">
+														<label class="control-label" for="name">Address</label>
+														<input id="add" name="add" type="text" placeholder="Your address" class="form-control">
+													</div>
+													<div class="form-group">
+														<label class="control-label" for="name">City</label>
+														<input id="city" name="city" type="text" placeholder="Your city" class="form-control">
+													</div>
+													<div class="form-group">
+														<label class="control-label" for="name">State</label>
+														<input id="state" name="state" type="text" placeholder="Your state" class="form-control">
+													</div>
+													<div class="form-group">
+														<label class="control-label" for="name">Pin</label>
+														<input id="pin" name="pin" type="text" placeholder="Your city zip code" class="form-control">
+													</div>
+													<div class="form-group">
+														<button type="submit" class="btn btn-primary">save changes</button>
+														<a href="#" class="text-uppercase form-links">cancel</a>
+													</div>
+												</div>
+										
+												<!-- Form actions -->
+												
+											</form>
+										  </div>
+										</div>
+									  </div>
+									  <div class="panel panel-default">
+										<div class="panel-heading">
+											<div class="panel-title clearfix">
+												<div class="col-md-3 control-label" for="name">Email</div>
+												<div class="col-md-9">
+													eb@erickbautista.com
+													<a data-toggle="collapse" data-parent="#accordion" href="#mail_edit" class="form-links pull-right">
+													  Edit
+													</a>
+												</div>
+											</div>
+										</div>
+										<div id="mail_edit" class="panel-collapse collapse">
+										  <div class="panel-body">
+											<form action="" method="post">					
+												<!-- Name input-->
+												<div class="col-md-3 col-sm-4 col-xs-12 control-label" for="name">Mail</div>
+												<div class="col-md-4 col-sm-8 col-xs-12">
+													<div class="form-group">
+														<label class="control-label" for="name">Mail Id</label>
+														<input id="mail" name="mail" type="email" placeholder="Your mail" class="form-control">
+													</div>
+													<div class="form-group">
+														<button type="submit" class="btn btn-primary">save changes</button>
+														<a href="#" class="text-uppercase form-links">cancel</a>
+													</div>
+												</div>										
+												<!-- Form actions -->
+											</form>
+										  </div>
+										</div>
+									  </div>
+									  <div class="panel panel-default">
+										<div class="panel-heading">
+											<div class="panel-title clearfix">
+												<div class="col-md-3 control-label" for="name">Password</div>
+												<div class="col-md-9">
+													<i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i>
+													<a data-toggle="collapse" data-parent="#accordion" href="#pswd_edit" class="form-links pull-right">
+													  Edit
+													</a>
+												</div>
+											</div>
+										</div>
+										<div id="pswd_edit" class="panel-collapse collapse">
+										  <div class="panel-body">
+												<form action="" method="post">					
+												<!-- Name input-->
+												<div class="col-md-3 col-sm-4 col-xs-12 control-label" for="name">Password</div>
+												<div class="col-md-4 col-sm-8 col-xs-12">
+													<div class="form-group">
+														<label class="control-label" for="name">Password</label>
+														<input id="pswd" name="pswd" type="password" placeholder="Your password" class="form-control">
+													</div>
+													<div class="form-group">
+														<button type="submit" class="btn btn-primary">save changes</button>
+														<a href="#" class="text-uppercase form-links">cancel</a>
+													</div>
+												</div>										
+												<!-- Form actions -->
+											</form>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<a class="btn btn-facebook"><i class="fa fa-facebook"></i> <span>Link with facebook</span></a>
+							</div>
+							<div class="tab-pane text-style" id="tab2">
+								<h2>Lorem ipsum</h2>
+								<p>
+								 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+								 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
+								 a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+								 essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+								 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
+								</p> 
+							</div>
+						</div>	
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container-fluid -->
+		</div>
+		<!-- /#page-wrapper -->
+	</div><!-- /#wrapper -->
+	
+
+
+
+	<!--footer-->
+	<footer>
+	  <div class="footer_top_col bg-black">
+		<div class="container">
+		  <div class="col-md-7 col-xs-12">
+			<div class="row">
+			  <div class="col-sm-4 col-xs-12">
+				<img src="images/foot_logo.png" alt="logo" class="img-responsive" />
+			  </div>
+			  <div class="col-sm-4 col-xs-12">
+				<div class="heading_footer">My Account </div>
+				<ul class="footerul">
+					<li><a title="Preferences" href="#">Preferences</a></li>
+					<li><a title="Dashboard" href="#">Dashboard</a></li>
+					<li><a title="Privacy" href="#">Privacy</a></li>
+					<li><a title="Terms of Service" href="#">Terms of Service</a></li>
+					<li><a title="Sign Out" href="#">Sign Out</a></li>
+				</ul>
+			  </div>
+			  <div class="col-sm-4 col-xs-12">
+				<div class="heading_footer">Earn</div>
+				<ul class="footerul">
+				    <li><a title="My Points" href="#">My Points</a></li>
+				    <li><a title="Branded Elite" href="#">Branded Elite</a></li>
+				    <li><a title="Local Deals" href="#">Local Deals</a></li>
+				    <li><a title="Offers" href="#">Offers</a></li>
+				    <li><a title="Invite Friends" href="#">Invite Friends</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-lg-5 col-md-5 col-xs-12">
+			<div class="clearfix">
+			  <div class="col-sm-6 col-xs-12">
+				<div class="row">
+				  <div class="heading_footer">Support </div>
+				  <ul class="footerul">
+					<li><a title="My Points" href="#">My Points</a></li>
+				    <li><a title="Branded Elite" href="#">Branded Elite</a></li>
+				    <li><a title="Local Deals" href="#">Local Deals</a></li>
+				    <li><a title="Offers" href="#">Offers</a></li>
+				    <li><a title="Invite Friends" href="#">Invite Friends</a></li>
+				  </ul>
+				</div>
+			  </div>
+			  <div class="col-sm-6 col-xs-12">
+				<div class="row">
+				  <div class="heading_footer">Follow Us</div>
+				  <ul class="footerul list-inline social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				  </ul>
+				  
+				  <figure>
+						<img src="images/MintVine-UserPreferences_10.png" alt="to be replaced" />
+				  </figure>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+		<div class="footer_mid_col bg-white">
+			<div class="container">
+			  <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-md-4 col-sm-4 col-xs-12">
+					<img src="images/MintVine-UserPreferences_17.png" alt="logo" class="img-responsive" />
+				  </div>
+				  <div class="col-md-4 col-sm-4 col-xs-12">
+					<img src="images/MintVine-UserPreferences_11.png" alt="logo" class="img-responsive" />
+				  </div>
+				  <div class="col-md-4 col-sm-4 col-xs-12">
+					<img src="images/MintVine-UserPreferences_14.png" alt="logo" class="img-responsive" />
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="footer_bottom_col bg-light-grey ">
+			<div class="container">
+			  <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-md-4 col-sm-4 col-xs-12">
+					<img src="images/MintVine-UserPreferences_23.png" alt="logo" class="img-responsive" />
+				  </div>
+				  <div class="col-md-4 col-sm-4 col-xs-12">
+					<img src="images/MintVine-UserPreferences_29.png" alt="logo" class="img-responsive" />
+				  </div>
+				  <div class="col-md-4 col-sm-4 col-xs-12">
+					<img src="images/MintVine-UserPreferences_26.png" alt="logo" class="img-responsive" />
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="copyright text-center clearfix">
+				<p class="light">Site copyright © 2017 Branded. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = code end = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+	
+	<!-- Script-->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
